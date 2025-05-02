@@ -18,7 +18,7 @@ export default function Portfolio() {
     <div className="bg-black min-h-screen font-sans text-white ">
     <header className="text-center py-10">
       <h1 className="text-4xl font-bold hover:text-indigo-400 transition duration-300 hover:scale-110">Krishna Enagandula</h1>
-      <p className="text-gray-400 mt-2 hover:text-indigo-300 transition duration-300 hover:scale-110">UI/UX Designer</p>
+      <p className="text-gray-400 mt-2 hover:text-indigo-300 transition duration-300 hover:scale-110">UI/UX Designer & Frontend Developer</p>
       <div className="mt-6 flex justify-center">
       <div className="mt-6 flex justify-center">
     <img
