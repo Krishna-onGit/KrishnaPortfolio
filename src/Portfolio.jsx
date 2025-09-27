@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import VisualIndex from "./VisualIndex";
+import VisualIndex from "./visualIndex";
 import Nomad from "./Nomad";
 import Netbanking from "./Netbanking";
 import NeoNatura from "./NeoNatura";
