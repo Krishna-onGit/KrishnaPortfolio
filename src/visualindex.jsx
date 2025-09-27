@@ -9,16 +9,16 @@ const VisualIndex = () => {
       </h1>
       <p className="text-lg text-gray-700 mb-6">
         A modern, interactive, card-based showcase for creative visuals and
-        editorial layouts.
+        editorial layouts. Here’s how I approached it !!
       </p>
       {/* Hero/Image Grid: Two images side by side, same size, centered */}
       <div className="flex flex-col md:flex-row gap-5 items-center mb-8 justify-center">
         {/* Hero Image Left */}
         <div className="flex-shrink-0 w-full md:w-1/2 h-[340px] flex items-center justify-center md:justify-end pl-0 md:pl-4">
           <img
-            src="/1st draft.png"
+            src="/TheVIsualIndex/1st draft.png"
             alt="Hero Visual"
-            className="rounded-2xl shadow-2xl bg-white w-full h-full object-contain object-center transition-transform duration-200 hover:scale-105"
+            className="rounded-2xl shadow-2xl bg-white w-full h-full object-fit object-center transition-transform duration-200 hover:scale-105"
             style={{
               boxShadow:
                 "0 8px 32px 0 rgba(31, 38, 135, 0.25), 0 2px 8px 0 rgba(0,0,0,0.10)",
@@ -28,9 +28,9 @@ const VisualIndex = () => {
         {/* Right Image (same size as left) */}
         <div className="flex-shrink-0 w-full md:w-1/2 h-[340px] flex items-center justify-center md:justify-start pr-0 md:pr-4">
           <img
-            src="/MAINSCREEN.png"
+            src="/TheVIsualIndex/VisualWorl.png"
             alt="Right Visual"
-            className="rounded-2xl shadow-2xl bg-white w-full h-full object-contain object-center transition-transform duration-200 hover:scale-105"
+            className="rounded-2xl shadow-2xl bg-white w-full h-full object-cover object-center transition-transform duration-200 hover:scale-105"
             style={{
               boxShadow:
                 "0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 2px 8px 0 rgba(0,0,0,0.10)",
@@ -124,7 +124,7 @@ const VisualIndex = () => {
         <h2 className="text-xl font-semibold mb-4">More Project Images</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <img
-            src="/MainBg2.png"
+            src="/TheVIsualIndex/MainBg2.png"
             alt="Option 1"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
@@ -133,7 +133,7 @@ const VisualIndex = () => {
             }}
           />
           <img
-            src="/MainBg4.png"
+            src="/TheVIsualIndex/MainBg4.png"
             alt="Option 2"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
@@ -142,7 +142,7 @@ const VisualIndex = () => {
             }}
           />
           <img
-            src="/MainBg 1.png"
+            src="/TheVIsualIndex/MainBg 1.png"
             alt="Option 3"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
@@ -151,7 +151,7 @@ const VisualIndex = () => {
             }}
           />
           <img
-            src="/MainBg6.png"
+            src="/TheVIsualIndex/MainBg6.png"
             alt="Option 4"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
@@ -160,7 +160,7 @@ const VisualIndex = () => {
             }}
           />
           <img
-            src="/MainBg3.png"
+            src="/TheVIsualIndex/MainBg3.png"
             alt="Option 5"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
@@ -169,7 +169,7 @@ const VisualIndex = () => {
             }}
           />
           <img
-            src="/MainBg8.png"
+            src="/TheVIsualIndex/MainBg8.png"
             alt="Option 6"
             className="rounded-xl shadow-2xl bg-white w-auto h-40 object-contain object-center transition-transform duration-200 hover:scale-105"
             style={{
