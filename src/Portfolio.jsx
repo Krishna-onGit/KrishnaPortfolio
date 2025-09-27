@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import VisualIndex from "./visualIndex";
+import VisualIndex from "./visualindex";
 import Nomad from "./Nomad";
 import Netbanking from "./Netbanking";
 import NeoNatura from "./NeoNatura";
@@ -44,13 +44,32 @@ export default function Portfolio() {
   return (
     <div className="bg-black min-h-screen font-sans text-white ">
       {/* ---------- HEADER ---------- */}
-      <header className="text-center py-10">
-        <h1 className="text-4xl font-bold hover:text-indigo-400 transition duration-300 hover:scale-110">
-          Krishna Enagandula
-        </h1>
-        <p className="text-gray-400 mt-2 hover:text-indigo-300 transition duration-300 hover:scale-110">
+      <header className="relative py-10">
+        <div className="relative flex items-center justify-center">
+          {/* Centered Name */}
+          <h1 className="text-4xl font-bold hover:text-indigo-400 transition duration-300 hover:scale-110">
+            Krishna Enagandula
+          </h1>
+
+          {/* Projects Button on Right */}
+          <button
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="absolute right-24 text-lg font-medium text-gray-400 hover:text-indigo-300 transition duration-300 hover:scale-110"
+          >
+            Projects
+          </button>
+        </div>
+
+        {/* Subtitle */}
+        <p className="text-gray-400 mt-2 text-center hover:text-indigo-300 transition duration-300 hover:scale-110">
           UI/UX Designer & Frontend Developer
         </p>
+
+        {/* Image */}
         <div className="mt-6 flex justify-center">
           <img
             src="/Krishna.png"
@@ -267,6 +286,7 @@ export default function Portfolio() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={fadeInUp}
+        id="projects"
       >
         <h2 className="text-2xl font-semibold mb-8 hover:text-indigo-400 transition duration-300 hover:scale-110 text-center">
           Projects
