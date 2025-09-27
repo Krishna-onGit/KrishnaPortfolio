@@ -91,6 +91,23 @@ const VisualIndex = () => {
         </ul>
       </section>
 
+       {/* Text below grid */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-2"> Typography & Colors</h2>
+        <ul className="list-disc list-inside space-y-1 ml-4">
+          <li>
+            {" "}
+            Fonts: Crimson Text (primary)
+          </li>
+          <li>
+            {" "}
+            Colors: White (#FFFFFF) , Oil Black (#0C0C0C),
+          
+          </li>
+        </ul>
+      </section>
+
+
       {/* Text below grid */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">

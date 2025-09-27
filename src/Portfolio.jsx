@@ -45,20 +45,20 @@ export default function Portfolio() {
     <div className="bg-black min-h-screen font-sans text-white ">
       {/* ---------- HEADER ---------- */}
       <header className="relative py-10">
-        <div className="relative flex items-center justify-center">
-          {/* Centered Name */}
-          <h1 className="text-4xl font-bold hover:text-indigo-400 transition duration-300 hover:scale-110">
+        {/* Top Row: Name (centered) */}
+        <div className="relative flex justify-center">
+          <h1 className="text-3xl sm:text-4xl font-bold hover:text-indigo-400 transition duration-300 hover:scale-110">
             Krishna Enagandula
           </h1>
 
-          {/* Projects Button on Right */}
+          {/* Projects Button (only on desktop) */}
           <button
             onClick={() =>
               document
                 .getElementById("projects")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="absolute right-24 text-lg font-medium text-gray-400 hover:text-indigo-300 transition duration-300 hover:scale-110"
+            className="hidden sm:block absolute right-6 text-lg font-medium text-gray-400 hover:text-indigo-300 transition duration-300 hover:scale-110"
           >
             Projects
           </button>
@@ -69,12 +69,26 @@ export default function Portfolio() {
           UI/UX Designer & Frontend Developer
         </p>
 
+        {/* Projects Button (only on mobile, below subtitle) */}
+        <div className="mt-3 flex justify-center sm:hidden">
+          <button
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="text-base font-medium text-gray-400 hover:text-indigo-300 transition duration-300 hover:scale-110"
+          >
+            Projects
+          </button>
+        </div>
+
         {/* Image */}
         <div className="mt-6 flex justify-center">
           <img
             src="/Krishna.png"
             alt="Krishna Enagandula"
-            className="w-42 h-52 rounded-full object-cover border-2 border-indigo-500 shadow-lg hover:scale-150 transition-transform duration-300"
+            className="w-42 h-52 sm:w-42 sm:h-52 rounded-full object-cover border-2 border-indigo-500 shadow-lg hover:scale-150 transition-transform duration-300"
           />
         </div>
       </header>
@@ -89,14 +103,17 @@ export default function Portfolio() {
         variants={fadeInUp}
       >
         <h2 className="text-2xl font-semibold mb-4 hover:text-indigo-400 transition duration-300 hover:scale-110">
-          About Me
+          Designer’s Note
         </h2>
         <p className="text-gray-300 hover:text-indigo-200 transition duration-300 hover:scale-110">
-          Hi, I’m a budding UI/UX designer with a background in BSc.IT. I love
-          crafting digital experiences that are both visually appealing and
-          user-focused. I'm passionate about bridging the gap between design and
-          usability, currently exploring the intersection of UI/UX and frontend
-          development.
+          I’m a passionate UI/UX designer who loves creating digital experiences
+          that are both intuitive and visually engaging. I thrive at the
+          intersection of creativity and functionality, translating complex
+          ideas into user-friendly interfaces. With a keen eye for detail and a
+          user-centered approach, I enjoy crafting designs that not only look
+          great but feel seamless to interact with. I’m constantly exploring new
+          ways to merge design with frontend development to bring innovative,
+          impactful experiences to life.
         </p>
       </motion.section>
 
@@ -524,9 +541,9 @@ export default function Portfolio() {
                   href="https://sensible-audience-350580.framer.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-blue-700 to-indigo-500 text-white font-bold shadow-md hover:from-indigo-500 hover:to-blue-600 hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                  className="px-5 py-2 rounded-lg bg-gradient-to-r from-indigo-600 via-blue-700 to-indigo-500 text-white font-bold shadow-md hover:from-indigo-500 hover:to-blue-600 hover:scale-105 transition-all duration-200 focus:outline-none  "
                 >
-                  Framer Live Preview
+                  Framer Live Link
                 </a>
               </div>
             </div>
